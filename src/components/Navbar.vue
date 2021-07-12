@@ -51,12 +51,14 @@ export default {
                     line-height: 140px;
         
                     a {
+                        height: 100%;
+                        display: inline-block;
                         text-decoration: none;
                         color: $color-ligth-black;
 
         
                         &:hover {
-                            border-bottom: 6px solid $color-blue; //da sistemare
+                            border-bottom: 6px solid $color-blue;
                             color: $color-blue;
                         }
                     }
