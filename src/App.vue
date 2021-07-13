@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Navbar />
-    <Main />
+    <Main :comics="comics" />
     <Footer />
   </div>
 </template>
@@ -10,6 +10,7 @@
 import Navbar from './components/Navbar.vue'
 import Main from './components/Main.vue'
 import Footer from './components/Footer.vue'
+import comicsJson from './jsons/dc-comics.json'
 
 export default {
   name: 'App',
@@ -17,6 +18,11 @@ export default {
     Navbar,
     Main,
     Footer
+  },
+  data: function() {
+    return {
+      comics: comicsJson,
+    }
   }
 }
 </script>
