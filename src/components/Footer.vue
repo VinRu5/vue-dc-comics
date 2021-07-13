@@ -1,7 +1,9 @@
 <template>
     <footer>
         <FooterTopbar />
-        <FooterContent />
+        <FooterContent 
+            :footerList="footerList" 
+        />
         <FooterBottombar />
     </footer>
 </template>
@@ -17,7 +19,11 @@ export default {
         FooterTopbar,
         FooterContent,
         FooterBottombar
-    }
+    },
+    props: {
+        footerList: Array,
+    },
+
 }
 </script>
 

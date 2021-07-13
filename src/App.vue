@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <Navbar />
+    <Navbar :navList="navList" />
     <Main :comics="comics" />
-    <Footer />
+    <Footer :footerList="footerList" />
   </div>
 </template>
 
@@ -70,7 +70,7 @@ export default {
         },
         {
           id: 9,
-          name: 'shop',
+          name: 'SHOP',
           href: '#'
         },
       ],
